@@ -82,7 +82,7 @@ x.style.display = "none";
     var x = document.getElementById("feedpremium");
 
     $(document).ready(function () {
-        if (window.location.origin("https://premium.bcssocial.net") > -1) {
+        if (window.referrer("https://premium.bcssocial.net") > -1) {
             document.getElementById('feedpremium').innerHTML = ' ';
         }
         else {
